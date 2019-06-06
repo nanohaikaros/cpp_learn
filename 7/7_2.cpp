@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+const double Pi = 3.14159;
+
+// declaraction contains two parameters
+double SurfaceArea(double Radius, double Height);
+
+int main() {
+    cout << "Enter the radius of the cylinder: ";
+    double InRadius = 0;
+    cin >> InRadius;
+    cout << "Enter the height of the cylinder: ";
+    double InHeight = 0;
+    cin >> InHeight;
+
+    cout << "Surface Area: " << SurfaceArea(InRadius, InHeight) << endl;
+
+    return 0;
+}
+
+double SurfaceArea(double Radius, double Height) {
+    double Area = 2 * Pi * Radius + 2 * Pi * Radius * Height;
+    return Area;
+}
